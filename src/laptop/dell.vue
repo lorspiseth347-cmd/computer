@@ -19,7 +19,7 @@ const cartStore = useCartStore();
             style="max-height: 180px; min-height: 170px"
           />
           <div class="position-absolute" style="top: 15px; left: 10px">
-            <span style="background-color: lime" class="p-1 rounded"
+            <span style="background-color: lime" class="px-3 py-1 rounded-pill fw-bold"
               >{{ products.qty }} Left</span
             >
           </div>

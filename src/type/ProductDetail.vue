@@ -2,6 +2,8 @@
 import { computed } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { allProducts } from "../data/Product";
+import { useCartStore } from "../stores/useCartStore";
+const cartStore = useCartStore()
 
 const route = useRoute();
 const router = useRouter();
@@ -142,6 +144,7 @@ const goBack = () => {
           <div class="d-flex gap-2 mt-4">
 
             <button
+            @click="cartStore.addToCart(product)"
               class="btn btn-primary btn-lg px-4"
               :disabled="product.qty === 0"
             >
