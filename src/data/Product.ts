@@ -17,6 +17,7 @@ export interface Product {
   };
 }
 
+
 export const dellProducts: Product[] = [
   {
     id: 1,
